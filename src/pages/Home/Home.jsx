@@ -9,13 +9,15 @@ const Home = () => {
             <h1>Shopping Cart</h1>
         </div>
         <div className={styles.products}>
-        {
-            PRODUCTS.map(function(product){
-                return(
-                    <Product product={product} />
-                )
-            })
-        }
+            {
+                PRODUCTS.map(function(product){
+                    return(
+                        <>
+                        <Product data = {product} />
+                        </>
+                    )
+                })
+            }
         </div>
     </div>
   )
